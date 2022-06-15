@@ -1,0 +1,121 @@
+/*---------------Courses Page--------------*/
+.courses {
+  .box-container {
+    @include grid(25rem);
+    .box {
+      display: flex;
+      flex-direction: column;
+      box-shadow: 1px 1px 8px 0px #e8e5e5;
+      cursor: pointer;
+
+      &:hover .image img {
+        transform: scale(1.1);
+      }
+      &:hover {
+        box-shadow: 1px 1px 8px 0px #9dfdf8;
+      }
+
+      &.hide {
+        display: none;
+      }
+
+      .image {
+        height: 15rem;
+        overflow: hidden;
+        position: relative;
+        flex-shrink: 0;
+
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
+
+        h3 {
+          @include titleText(1.5rem);
+          position: absolute;
+          top: 1rem;
+          left: 1rem;
+          padding: 0.5rem 1.5rem;
+          background: $white;
+        }
+      }
+
+      .content {
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+
+        h3 {
+          @include titleText(2rem);
+          line-height: 2rem;
+        }
+
+        p {
+          @include graphText(1.5rem);
+          flex: 1;
+        }
+
+        .appreciate {
+          padding: 0.4rem 0;
+          display: flex;
+          align-items: center;
+          justify-content: start;
+          color: rgb(187, 187, 22);
+
+          span {
+            font-size: 1.4rem;
+            color: $green;
+          }
+
+          .stars {
+            margin: 0 0.5rem;
+          }
+        }
+
+        .price {
+          p {
+            font-weight: 700;
+            color: $black;
+            span {
+              font-weight: 300;
+              text-decoration: line-through;
+            }
+          }
+        }
+
+        a {
+          align-self: center;
+          text-align: center;
+          width: 50%;
+          font-size: 1.2rem;
+          padding: 0.8rem;
+          margin-bottom: 1.5rem;
+        }
+        .icons {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 2rem;
+          border-top: $border;
+          margin-top: auto;
+          flex-shrink: 0;
+
+          span {
+            padding-top: 0.5rem;
+            i {
+              color: $green;
+              padding-right: 0.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .load-more {
+    margin-top: 2rem;
+    text-align: center;
+  }
+}

@@ -1,0 +1,95 @@
+/*------------------Media Query----------------*/
+@include responsive_1200 {
+  .header {
+    padding: 2rem 5%;
+  }
+  section {
+    padding: 3rem 5%;
+  }
+}
+
+@include responsive_991 {
+  html {
+    font-size: 55%;
+  }
+
+  .header {
+    font-size: 2rem;
+  }
+
+  section {
+    padding: 3rem 2%;
+  }
+
+  .navbar {
+    .search {
+      width: 250px;
+      margin: 0;
+    }
+  }
+}
+@include responsive_768 {
+  .header {
+    font-size: 2rem;
+
+    #menu-btn {
+      display: inline-block;
+    }
+
+    .navbar {
+      position: fixed;
+      top: 0;
+      right: -105%;
+      width: 30rem;
+      background: $white;
+      height: 100%;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      z-index: 1200;
+
+      .search {
+        display: none;
+      }
+
+      #close-navbar {
+        display: block;
+      }
+
+      &.active {
+        box-shadow: 0 0 0 100vw rgba(84, 83, 83, 0.6);
+        right: 0;
+      }
+
+      a {
+        display: block;
+        margin: 1rem 0;
+        text-align: center;
+        font-size: 3rem;
+      }
+    }
+  }
+
+  /*-----Home Page------*/
+  .home .slide .content h3 {
+    font-size: 3rem;
+  }
+}
+@include responsive_450 {
+  html {
+    font-size: 55%;
+  }
+
+  .heading {
+    font-size: 3rem;
+  }
+
+  .about .content .about-title {
+    font-size: 4rem;
+  }
+
+  .courses .box-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+}

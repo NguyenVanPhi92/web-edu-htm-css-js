@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leading Page With SCSS Home</title>
+    <!-- font awesome cdn link-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- swiper css link -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- header section starts -->
+    <header class="header">
+      <a href="#" class="logo"><i class="fas fa-lightbulb"></i>educa</a>
+
+      <nav class="navbar">
+        <div id="close-navbar" class="fas fa-times"></div>
+        <a href="home.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="courses.html">courses</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="icons">
+        <div id="account-btn" class="fas fa-user"></div>
+        <div id="menu-btn" class="fas fa-bars"></div>
+      </div>
+    </header>
+
+    <!-- Home Slide Banner-->
+    <section class="home">
+      <div class="swiper home-slider">
+        <div class="swiper-wrapper">
+          <section
+            class="slide swiper-slide"
+            style="background: url(./images/home-slide-1.jpg) no-repeat"
+          >
+            <div class="content">
+              <h3>The best courses you will find here!</h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Praesentium facere architecto ex et nulla sequi molestiae
+                pariatur ducimus, adipisci fugiat aut reprehenderit unde. Eaque
+                facere nemo veniam itaque. Molestiae, perspiciatis!
+              </p>
+              <a href="#" class="btn">get started</a>
+            </div>
+          </section>
+
+          <section
+            class="slide swiper-slide"
+            style="background: url(./images/home-slide-2.jpg) no-repeat"
+          >
+            <div class="content">
+              <h3>The best courses you will find here!</h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Praesentium facere architecto ex et nulla sequi molestiae
+                pariatur ducimus, adipisci fugiat aut reprehenderit unde. Eaque
+                facere nemo veniam itaque. Molestiae, perspiciatis!
+              </p>
+              <a href="#" class="btn">get started</a>
+            </div>
+          </section>
+
+          <section
+            class="slide swiper-slide"
+            style="background: url(./images/home-slide-3.jpg) no-repeat"
+          >
+            <div class="content">
+              <h3>The best courses you will find here!</h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Praesentium facere architecto ex et nulla sequi molestiae
+                pariatur ducimus, adipisci fugiat aut reprehenderit unde. Eaque
+                facere nemo veniam itaque. Molestiae, perspiciatis!
+              </p>
+              <a href="#" class="btn">get started</a>
+            </div>
+          </section>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <!-- Account Form  -->
+    <section class="account-form">
+      <div class="buttons">
+        <span class="btn active login-btn">login</span>
+        <span class="btn register-btn">register</span>
+      </div>
+
+      <form class="login-form active" action="">
+        <div id="close-form" class="fas fa-times"></div>
+
+        <h3>login now</h3>
+        <input type="email" class="box" placeholder="enter your email" />
+        <input type="password" class="box" placeholder="enter your email" />
+
+        <div class="flex">
+          <input type="checkbox" id="remember-me" />
+          <label for="remember-me">remember me</label>
+          <a href="#">forgot password?</a>
+        </div>
+
+        <input
+          style="font-weight: 800"
+          type="submit"
+          value="login now"
+          class="btn"
+        />
+      </form>
+
+      <form class="register-form" action="">
+        <div id="close-form" class="fas fa-times"></div>
+
+        <h3>register now</h3>
+        <input type="email" class="box" placeholder="enter your email" />
+        <input type="password" class="box" placeholder="enter your password" />
+        <input
+          type="password"
+          class="box"
+          placeholder="confirm your password"
+        />
+
+        <input
+          style="font-weight: 800"
+          type="submit"
+          value="register now"
+          class="btn"
+        />
+      </form>
+    </section>
+
+    <!-- Subject -->
+    <section class="subject">
+      <h1 class="heading">our popular subjects</h1>
+      <div class="box-container">
+        <div class="box">
+          <img src="./images/subject-icon-1.png" alt="" />
+          <h3>mathemetics</h3>
+          <p>12 modules</p>
+        </div>
+
+        <div class="box">
+          <img src="./images/subject-icon-2.png" alt="" />
+          <h3>teaching</h3>
+          <p>12 modules</p>
+        </div>
+
+        <div class="box">
+          <img src="./images/subject-icon-3.png" alt="" />
+          <h3>developments</h3>
+          <p>12 modules</p>
+        </div>
+
+        <div class="box">
+          <img src="./images/subject-icon-4.png" alt="" />
+          <h3>graphic design</h3>
+          <p>12 modules</p>
+        </div>
+
+        <div class="box">
+          <img src="./images/subject-icon-5.png" alt="" />
+          <h3>science</h3>
+          <p>12 modules</p>
+        </div>
+
+        <div class="box">
+          <img src="./images/subject-icon-6.png" alt="" />
+          <h3>engineering</h3>
+          <p>12 modules</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Courses Slider -->
+    <section class="home-courses">
+      <h1 class="heading">our popular courses</h1>
+      <div class="swiper home-courses-slider">
+        <div class="swiper-wrapper">
+          <div class="slide swiper-slide">
+            <div class="image">
+              <img src="./images/course-1-1.png" alt="" />
+              <h3>web development</h3>
+            </div>
+            <div class="content">
+              <h3>web development</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+                voluptates quasi ?
+              </p>
+              <a href="#" class="btn">Read more</a>
+            </div>
+          </div>
+
+          <div class="slide swiper-slide">
+            <div class="image">
+              <img src="./images/course-1-2.png" alt="" />
+              <h3>web development</h3>
+            </div>
+            <div class="content">
+              <h3>web development</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+                voluptates quasi ?
+              </p>
+              <a href="#" class="btn">Read more</a>
+            </div>
+          </div>
+
+          <div class="slide swiper-slide">
+            <div class="image">
+              <img src="./images/course-1-3.png" alt="" />
+              <h3>web development</h3>
+            </div>
+            <div class="content">
+              <h3>web development</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+                voluptates quasi ?
+              </p>
+              <a href="#" class="btn">Read more</a>
+            </div>
+          </div>
+
+          <div class="slide swiper-slide">
+            <div class="image">
+              <img src="./images/course-1-4.png" alt="" />
+              <h3>web development</h3>
+            </div>
+            <div class="content">
+              <h3>web development</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+                voluptates quasi ?
+              </p>
+              <a href="#" class="btn">Read more</a>
+            </div>
+          </div>
+
+          <div class="slide swiper-slide">
+            <div class="image">
+              <img src="./images/course-1-5.png" alt="" />
+              <h3>web development</h3>
+            </div>
+            <div class="content">
+              <h3>web development</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+                voluptates quasi ?
+              </p>
+              <a href="#" class="btn">Read more</a>
+            </div>
+          </div>
+
+          <div class="slide swiper-slide">
+            <div class="image">
+              <img src="./images/course-1-6.png" alt="" />
+              <h3>web development</h3>
+            </div>
+            <div class="content">
+              <h3>web development</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+                voluptates quasi ?
+              </p>
+              <a href="#" class="btn">Read more</a>
+            </div>
+          </div>
+        </div>
+        <div class="prev swiper-button-prev"></div>
+        <div class="next swiper-button-next"></div>
+      </div>
+    </section>
+
+    <!-- notification section -->
+    <div class="wrapper">
+      <section class="notification">
+        <h2 class="heading">Give their boundless potential unlimited access</h2>
+        <p class="highlight">
+          Unlock special features and access to everything Education.com offers
+          with a Premium membership.
+        </p>
+        <div class="premium-info">
+          <div class="progressTracker">
+            <h4>Progress Tracker</h4>
+            <div class="highlight">
+              Share in all of your learner’s triumphs, from little "Aha!"
+              moments to milestone achievements
+            </div>
+          </div>
+
+          <div class="premimum-full">
+            <img src="./images/premium-content3x.png" alt="" />
+          </div>
+
+          <div class="guidedLessons">
+            <h4>Guided Lessons</h4>
+            <div class="highlight">
+              Follow our carefully designed sequence of fun games to practice
+              and perfect 800+ key skills.
+            </div>
+          </div>
+        </div>
+        <button class="btn">Give premium a try</button>
+      </section>
+    </div>
+
+    <!-- quotes-section section -->
+    <div class="quotes">
+      <section class="quotes-section">
+        <h1 class="heading">Join the Education.com community!</h1>
+        <div class="mascotList">
+          <div class="mascot">
+            <div class="image">
+              <img src="./images/socialFloyd.png" alt="" />
+            </div>
+            <p class="bullet">
+              <span>28 million parents</span>, teachers, and students served
+            </p>
+          </div>
+
+          <div class="mascot">
+            <div class="image">
+              <img src="./images/socialIceCream.png" alt="" />
+            </div>
+            <p class="bullet">
+              Used in <span>20 countries</span> across 6 continents
+            </p>
+          </div>
+
+          <div class="mascot">
+            <div class="image">
+              <img src="./images/socialTuTu.png" alt="" />
+            </div>
+            <p class="bullet">
+              Library with <span>30,000</span> educational resources
+            </p>
+          </div>
+        </div>
+        <div class="quotes-collection">
+          <div class="quotes">
+            <div class="quote"></div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Footer Section -->
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3><i class="fas fa-lightbulb"></i>educe</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+            delectus temporibus illo consequatur sit ipsam et fugit natus?
+            Impedit ratione a enim laudantium quod esse voluptatum. Magni fugiat
+            deleniti nam!
+          </p>
+          <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+          </div>
+        </div>
+
+        <div class="box">
+          <h3>quick links</h3>
+          <a class="link" href="home.html">Home</a>
+          <a class="link" href="about.html">About</a>
+          <a class="link" href="courses.html">courses</a>
+          <a class="link" href="contact.html">Contact</a>
+        </div>
+
+        <div class="box">
+          <h3>useful links</h3>
+          <a href="#" class="link">help canter</a>
+          <a href="#" class="link">ask questions</a>
+          <a href="#" class="link">send feedback</a>
+          <a href="#" class="link">private policy</a>
+          <a href="#" class="link">term of use</a>
+        </div>
+
+        <div class="box">
+          <h3>newsletter</h3>
+          <p>subscribe for latest updates</p>
+          <form action="">
+            <input
+              type="email"
+              name=""
+              placeholder="enter your email"
+              class="email"
+            />
+            <input type="submit" value="subscribe" class="btn" />
+          </form>
+        </div>
+      </div>
+
+      <div class="credit">
+        created by <span>mr. Bojji web dev</span> | all rights reserved!
+      </div>
+    </section>
+
+    <!-- swiper js link -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <!-- custom js file link -->
+    <script src="./js/csript.js"></script>
+  </body>
+</html>

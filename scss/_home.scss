@@ -1,0 +1,243 @@
+/*---------------Home Page--------------*/
+// Home slide
+.home {
+  padding: 0;
+
+  .slide {
+    display: flex;
+    align-items: center;
+    height: 60rem;
+    background-size: cover !important;
+    background-position: center !important;
+
+    .content {
+      width: 70rem;
+
+      h3 {
+        @include titleText(5rem);
+        color: $white;
+      }
+
+      p {
+        @include graphText(1.6rem);
+        color: $light-white;
+        padding: 1rem 0;
+      }
+    }
+  }
+}
+
+.swiper-pagination-bullet-active {
+  background: $green;
+  width: 1rem;
+  height: 1rem;
+}
+
+// Subject
+.subject {
+  .box-container {
+    @include grid(16rem);
+
+    .box {
+      padding: 3rem 2rem;
+      text-align: center;
+      border: $border;
+      background: $light-green;
+      cursor: pointer;
+
+      &:hover {
+        background: $green;
+
+        h3 {
+          color: $white;
+        }
+
+        p {
+          color: $light-white;
+        }
+      }
+
+      img {
+        height: 10rem;
+        margin-bottom: 0.7rem;
+      }
+
+      h3 {
+        @include titleText(1.7rem);
+        padding: 0.5rem 0;
+      }
+
+      p {
+        @include graphText(1.5rem);
+      }
+    }
+  }
+}
+//Courses Slider
+.home-courses {
+  .slide {
+    text-align: center;
+    position: relative;
+    background: $light-green;
+    cursor: pointer;
+    overflow: hidden;
+
+    &:hover .content {
+      bottom: 0;
+    }
+
+    .image {
+      padding: 2rem;
+
+      img {
+        width: 100%;
+        margin-bottom: 1.5rem;
+      }
+
+      h3 {
+        @include titleText(2rem);
+      }
+    }
+
+    .content {
+      position: absolute;
+      bottom: -100%;
+      right: 0;
+      left: 0;
+      background: $green;
+      padding: 2rem 3rem;
+
+      h3 {
+        @include titleText(2rem);
+        color: $white;
+      }
+
+      p {
+        padding: 1rem 0;
+        @include graphText(1.5rem);
+        color: $light-white;
+      }
+
+      .btn:hover {
+        background: $black;
+      }
+    }
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: $green;
+  }
+}
+
+//notification
+.wrapper {
+  background: $light-green;
+  margin-bottom: 5rem;
+
+  .notification {
+    text-align: center;
+    h2 {
+      @include titleText(5rem);
+      text-align: center;
+    }
+    p {
+      @include titleText(2rem);
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .premium-info {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1.5rem;
+
+      .progressTracker {
+        text-align: left;
+        align-self: flex-start;
+        background-color: #ffff;
+        box-shadow: 0px 0px 5px 0px rgba($color: #f2f5f0, $alpha: 1);
+        padding: 1.2rem;
+        margin-top: 2rem;
+
+        h4 {
+          @include titleText(3rem);
+          margin: 2rem 0;
+        }
+
+        .highlight {
+          @include graphText(1.4rem);
+        }
+      }
+
+      .premimum-full {
+        img {
+          width: 600px;
+        }
+        margin-left: 2rem;
+      }
+
+      .guidedLessons {
+        text-align: left;
+        align-self: center;
+        background-color: #ffff;
+        box-shadow: 0px 0px 5px 0px rgba($color: #f2f5f0, $alpha: 1);
+        padding: 1.2rem;
+
+        h4 {
+          @include titleText(3rem);
+          margin: 2rem 0;
+        }
+
+        .highlight {
+          @include graphText(1.4rem);
+        }
+      }
+    }
+  }
+}
+
+//quotes-section section
+.quotes {
+  background: #fbfbfb;
+  h1 {
+    @include titleText(5rem);
+  }
+
+  .quotes-section {
+    .mascotList {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+
+      .mascot {
+        display: flex;
+        flex-direction: column;
+        .image {
+          height: 200px;
+          margin: 0 auto;
+          img {
+            width: 150px;
+            flex-shrink: 0;
+          }
+        }
+        p {
+          margin-top: 0 auto;
+          flex: 1;
+          padding: 0.5rem 0;
+          @include titleText(1.5rem);
+          word-wrap: break-word;
+          span {
+            color: yellowgreen;
+            font-size: 2rem;
+            font-weight: bolder;
+          }
+        }
+      }
+
+      .mascot:nth-child(2) {
+        margin-top: 5rem;
+      }
+    }
+  }
+}
